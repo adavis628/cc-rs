@@ -3125,6 +3125,18 @@ pub(crate) const LIST: &[(&str, TargetInfo<'static>)] = &[
         },
     ),
     (
+        "x86_64-unknown-aspen",
+        TargetInfo {
+            full_arch: "x86_64",
+            arch: "x86_64",
+            vendor: "unknown",
+            os: "aspen",
+            env: "",
+            abi: "",
+            llvm_target: "x86_64-unknown-aspen",
+        },
+    ),
+    (
         "x86_64-unknown-dragonfly",
         TargetInfo {
             full_arch: "x86_64",
