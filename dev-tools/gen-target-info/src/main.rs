@@ -44,6 +44,24 @@ fn main() {
         }
     }
 
+    assert!(target_specs
+        .0
+        .insert(
+            "x86_64-unknown-aspen".to_string(),
+            gen_target_info::TargetSpec {
+                arch: "x86_64".to_string(),
+                llvm_target: "x86_64-unknown-aspen".to_string(),
+                link_env_remove: None,
+                link_env: None,
+                os: Some("aspen".to_string()),
+                vendor: None,
+                env: None,
+                abi: None,
+                pre_link_args: None
+            }
+        )
+        .is_none());
+
     // Open file to write to
     let manifest_dir = env!("CARGO_MANIFEST_DIR");
 

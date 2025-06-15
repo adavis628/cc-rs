@@ -271,6 +271,7 @@ pub(crate) const LLVM_TARGETS: &[(&str, &str)] = &[
     ("x86_64-pc-windows-msvc", "x86_64-pc-windows-msvc"),
     ("x86_64-sun-solaris", "x86_64-pc-solaris"),
     ("x86_64-unikraft-linux-musl", "x86_64-unknown-linux-musl"),
+    ("x86_64-unknown-aspen", "x86_64-unknown-aspen"),
     ("x86_64-unknown-dragonfly", "x86_64-unknown-dragonfly"),
     ("x86_64-unknown-freebsd", "x86_64-unknown-freebsd"),
     ("x86_64-unknown-fuchsia", "x86_64-unknown-fuchsia"),
