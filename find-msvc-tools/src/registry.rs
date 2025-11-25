@@ -8,7 +8,7 @@
 // option. This file may not be copied, modified, or distributed
 // except according to those terms.
 
-use crate::windows::windows_sys::{
+use crate::windows_sys::{
     RegCloseKey, RegEnumKeyExW, RegOpenKeyExW, RegQueryValueExW, ERROR_NO_MORE_ITEMS,
     ERROR_SUCCESS, HKEY, HKEY_LOCAL_MACHINE, KEY_READ, KEY_WOW64_32KEY, REG_SZ,
 };
@@ -74,7 +74,7 @@ impl RegistryKey {
         }
     }
 
-    pub fn iter(&self) -> Iter {
+    pub fn iter(&self) -> Iter<'_> {
         Iter {
             idx: 0..,
             key: self,
