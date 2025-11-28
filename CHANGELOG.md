@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.48](https://github.com/adavis628/cc-rs/compare/cc-v1.2.47...cc-v1.2.48) - 2025-11-28
+
+### Other
+
+- Merge branch 'rust-lang:main' into main
+
 ## [1.2.47](https://github.com/rust-lang/cc-rs/compare/cc-v1.2.46...cc-v1.2.47) - 2025-11-21
 
 ### Other
